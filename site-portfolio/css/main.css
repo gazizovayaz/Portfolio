@@ -1,8 +1,141 @@
-html {
+html, body {
   font-family: 'PT Sans Caption', sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
 
-/* font-family: 'Merriweather', serif;
-font-family: 'PT Sans Caption', sans-serif; */
+img {
+   display: inline-block;
+} 
+
+
+/*...................................................
+
+GRID
+
+...................................................*/
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.row: after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.col-4 {
+  width: 360px;
+  margin-right: 20px;
+  float: left;    
+}
+
+.col-4: last-child {
+   margin-right: 0px; 
+}
+
+
+
+
+/*...................................................
+
+HEADER
+
+...................................................*/
+
+
+.header {
+    background: #343C4E;
+    background-image: url("../img/bg/bg-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    height: 100vh;
+    color: white;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+    
+}
+
+
+.header__title{
+    font-size: 56px;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+    margin-top: -70px;
+}
+
+
+.header__slogan{
+    font-size: 18px;
+    line-height: 32px;
+    
+    }
+
+.header__arrow{
+
+    width: 60px;
+    height: 50px;
+    margin-left: -30px;
+    font-size: 48px;
+    
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+}
+/*...................................................
+    
+PORTFOLIO
+    
+...................................................*/
+    
+.portfolio {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.portfolio-item {
+    margin-bottom: 20px;
+}
+    
+.title {
+    font-size: 46px;
+    margin-bottom: 60px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+.portfolio-item_image {
+    margin-bottom: 17px;
+}
+
+.portfolio-item__title {
+       font-size: 24px;
+        line-height: normal;
+        margin-bottom: 5px;
+    }
+
+.portfolio-item__title a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid #fff;
+}
+
+.portfolio-item__title a:hover {
+    color: #0052c2;
+    border-color: rgba(0, 82, 194, 0.3);
+    }
+
+.portfolio-item__text p{
+    margin-top: 0;
+    margin-bottom: 15px;    
+}
